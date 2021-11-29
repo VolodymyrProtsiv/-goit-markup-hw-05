@@ -769,7 +769,8 @@ body {
 
   background-color: var(--bg-modal-col);
 
-  transition: opacity 500ms, visibility 500ms;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -803,8 +804,13 @@ body {
   background-color: transparent;
   border: 1px solid var(--br-solid-col);
 }
-/* .is-hidden {
+
+.icon-close {
+  fill: black;
+}
+
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-} */
+}
