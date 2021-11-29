@@ -41,7 +41,7 @@
                 <ul class="list contact-list">
                     <li class="contact-list-item">
         
-                        <a href="mailto:info@devstudio.com" class="list-item list-item-contact link">
+                        <a href="" class="list-item list-item-contact link data-modal-open"  data-modal-open >
                             <svg class="icon-postbox" width="16" height="12">
                                 <use href="./img/icon.svg#icon-postbox">
         
@@ -329,5 +329,16 @@
         
             </div>
         </footer>
-        </body>
-    </html>
+          <!-- Backdrop-modal -->
+          <div class="backdrop " data-modal>
+            <div class="modal">
+                <button class="button-close" data-modal-close>
+                    <svg class="icon-close" width="18" height="18">
+                        <use href="./img/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </body>
+        <script src="./js/modal.js"></script>
+</html>
